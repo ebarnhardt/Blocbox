@@ -85,6 +85,7 @@ p {
   }
 }
 
+
 /*HEADER*/
 header {
   color:#FFF;
@@ -143,6 +144,23 @@ header .hero h1 {
 header .hero img {
   display: block;
   margin: 3em auto 0;
+}
+
+@media tv (min-width: 1824px) { 
+  header .hero h1 {
+      font-size: 200%;
+      font-weight: 100;
+      margin: 20px 0 40px;
+  }
+  header .hero p {
+      font-size: 120%;
+      font-weight: 100;
+      margin: 20px 0 40px;
+  }
+
+  header .hero li {
+      font-size: 120%;
+  }
 }
 
 /* BUTTONS */
