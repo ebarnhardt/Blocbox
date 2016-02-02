@@ -85,6 +85,13 @@ p {
   }
 }
 
+/*Trying to add more padding on right & left at small screen sizes*/
+@media (max-width: 800px) {
+  header, .benefits, .pricing, .testimonials, .advertisement, footer {
+      padding: 0 5%;
+  }
+}
+
 
 /*HEADER*/
 header {
@@ -146,6 +153,35 @@ header .hero img {
   margin: 3em auto 0;
 }
 
+/*NAV responsive fix*/
+@media (max-width:992px) {
+  header {
+    position: relative;
+  }
+  .bloop {
+    position: absolute;
+    right: 10px;
+  }
+}
+
+@media (max-width:443px) {
+  header ul {
+    top: 23px;
+    font-size: 14px;
+  }
+  .btn-outline {
+    display: none;
+  }
+}
+
+/*Hedaer Img Responsive fix*/
+
+@media (max-width:700px) {
+  header .hero img {
+    width: 80%;
+  }
+}
+/*ASSIGNMENT*/
 @media tv (min-width: 1824px) { 
   header .hero h1 {
       font-size: 200%;
@@ -293,6 +329,18 @@ header .hero img {
     font-style: italic;
   }
 
+  @media(max-width: 750px) {
+  .pricing ul li{
+    clear: both;
+    float: none;
+  }
+  .box {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+}
+
   /*TESTIMONIALS*/
 .testimonials {
   padding: 4em 0;
@@ -394,23 +442,29 @@ footer .logo {
 @media (min-width: 992px) {
   footer {
     background-color: #4B4C58;
-  background-image: linear-gradient(to left,
+    background-image: linear-gradient(to left,
       #27C8BF  0%, #27C8BF  33.33337%, #4B4C58 33.33337%, #4B4C58 100%);
   height: 100px;
   }
+}
 
-  footer p, footer nav ul {
-    padding: 2em 0;
-    text-align: left;
+@media (max-width:992px) {
+  footer {
+    height: 150px;
   }
 
-  footer .right-footer-block {
-    background-color: #27C8BF ;
+  footer .one-third {
+    text-align: center;
+    padding: 0;
+    width: 100%;
   }
 
-  footer .logo {
-    padding: 2em 0 2em 1.5em;
+ footer .link-block {
+    margin: -1em 0 0 0;
   }
+}
+  
+
 
 /*ADVERTISEMENT*/
 .advertisement {
