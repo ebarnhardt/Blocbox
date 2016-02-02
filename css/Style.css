@@ -352,6 +352,77 @@ header .hero img {
   margin-top: 20px;
  }
 
+ /*FOOTER*/
+ footer {
+  background-color: #4B4C58;
+  background-image: linear-gradient(to top,
+      #27C8BF 0%, #27C8BF 50%, #4B4C58 50%, #4B4C58 100%);
+  color: #FFFFFF;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+ }
 
+ footer p, footer nav ul {
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    margin: 10px auto 0;
+ }
 
+ footer nav ul li {
+  list-style-type: none;
+  display: inline;
+ }
+
+ footer nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+ }
+
+ footer .right-footer-block {
+  background-color: transparent;
+ }
+
+footer .logo {
+  padding: 2.35em 0;
+  margin: 0 auto;
+  display:block;
+}
+
+@media (min-width: 992px) {
+  footer {
+    background-color: #4B4C58;
+  background-image: linear-gradient(to left,
+      #27C8BF  0%, #27C8BF  33.33337%, #4B4C58 33.33337%, #4B4C58 100%);
+  height: 100px;
+  }
+
+  footer p, footer nav ul {
+    padding: 2em 0;
+    text-align: left;
+  }
+
+  footer .right-footer-block {
+    background-color: #27C8BF ;
+  }
+
+  footer .logo {
+    padding: 2em 0 2em 1.5em;
+  }
+
+/*ADVERTISEMENT*/
+.advertisement {
+  background-color:#282B32;
+  text-align: center;
+  color: #FFFFFF;
+  height:200px;
+  padding: 4em 0;
+  position: relative;
+}
+
+.advertisement p {
+  margin-bottom: 50px;
+}
 
