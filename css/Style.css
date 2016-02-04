@@ -434,7 +434,7 @@ header .hero img {
  }
 
 footer .logo {
-  padding: 2.35em 0;
+  padding: .25em 0;
   margin: 0 auto;
   display:block;
 }
@@ -444,23 +444,37 @@ footer .logo {
     background-color: #4B4C58;
     background-image: linear-gradient(to left,
       #27C8BF  0%, #27C8BF  33.33337%, #4B4C58 33.33337%, #4B4C58 100%);
-  height: 100px;
+    height: 70px;
+    text-align: left;
+  }
+
+  footer .one-third {
+    text-align: left;
+    padding: 1em 0;
+  }
+  footer .link-block {
+    text-align: left;
   }
 }
 
 @media (max-width:992px) {
   footer {
-    height: 150px;
+    height: 170px;
   }
 
   footer .one-third {
     text-align: center;
-    padding: 0;
     width: 100%;
+
   }
 
  footer .link-block {
-    margin: -1em 0 0 0;
+    margin: .25em 0 0 0;
+  }
+
+  footer .logo {
+    padding: 2em 0;
+    text-align: center;
   }
 }
   
@@ -483,6 +497,11 @@ footer .logo {
 /*DASHBOARD*/
 .dashboard {
    background:#F7F7F7;
+   height: 100%;
+ }
+
+ html {
+  height: 100%;
  }
 
 .left-nav {
@@ -529,7 +548,7 @@ footer .logo {
    top: 15px;
  }
 
-@media (min-width:992px) {
+@media (min-width:1090px) {
   .left-nav {
     height: 100vh;
     width: 14.6666667%;
@@ -538,7 +557,7 @@ footer .logo {
     background-image: linear-gradient(206deg, #26292F 0%, #494950 94%);
     float: left;
     display: block;
-    transofrm: translate(0,0);
+    transform: translate(0,0);
     -webkit-transform: translate(0,0); /**Chrome & Safari**/
     -o-transform: translate(0,0);     /**Opera**/
     -moz-transform: translate(0,0);   /**Firefox**/
@@ -580,7 +599,7 @@ footer .logo {
    margin-bottom: 15px;
  }
  .left-nav .items ul li a {
-   color:#FFFFFF;
+   color:#9D9FA3;
    text-decoration: none;
    font-weight: 100;
  }
@@ -612,16 +631,26 @@ footer .logo {
    vertical-align: top;
    padding-top: 8px;
    font-weight: 400;
-   margin:0 0 0 10px;
+   margin:4px 0 0 10px;
  }
  .left-nav .settings a {
+   color:#FFFFFF;
+   text-decoration: none;
+   text-align: left;
+   float: right;
+   margin-right:10px;
+   margin-top:20px;
+ }
+
+ .left-nav .settings a.cog {
    color:#FFFFFF;
    text-decoration: none;
    text-align: right;
    float: right;
    margin-right:10px;
-   margin-top:8px;
+   margin-top:-3px;
  }
+
 /*CONTENT*/
 .content {
   padding: 6em 1% 1.5em;
@@ -759,15 +788,18 @@ footer .logo {
 }
 
 .left-nav .items ul li.active {
-  color: #FFF;
+  color: #FFFFFF;
   background-color: #4B4C58;
-  height: 20px;
-  padding: 5px 7px 5px 12px;
+  height: 15px;
+  padding: 5px 5px 5px 12px;
   width: 100%;
   margin-left: -12px;
   border-right: 5px solid #E35640 ;
 }
 
+.left-nav .items ul li.active a {
+  color: #FFF;
+}
 
 
 
