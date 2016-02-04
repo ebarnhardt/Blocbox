@@ -8,6 +8,34 @@
  */
 
 /* These styles assume you are using ul and li */
+
+.settings .dropit .dropit-submenu {
+  position: absolute;
+  bottom: 100%;
+  right: -29px; /* dropdown left or right */
+  z-index: 10000;
+  display: none;
+  min-width: 149px;
+  list-style: none;
+  padding: 20px;
+  margin: 20px 0 0;
+  background: #000;
+}
+
+  .settings .dropit .dropit-open .dropit-submenu:after {
+  content: " ";
+  position: absolute;
+  border-style: solid;
+  border-width: 8px 8px 0px;
+  border-color: #FFFFFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  bottom: -8px;
+  right: 37px;
+ }
+
+
 .dropit {
   list-style: none;
   padding: 0;
@@ -15,11 +43,11 @@
   float:right;
   display:inline-block;
 }
+
 .dropit .dropit-trigger { position: relative; }
-.dropit .dropit-submenu {
+.content .dropit .dropit-submenu {
   position: absolute;
   top: 100%;
-
   right: 0; /* dropdown left or right */
   z-index: 1000;
   display: none;
@@ -29,14 +57,7 @@
   margin: 20px 0 0;
 }
 
-.dropit .dropit-open .dropit-submenu {
-  display: block;
-   background: #FFFFFF;
-   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
-   border-radius: 4px;
-}
-
- .dropit .dropit-open .dropit-submenu:after {
+.content .dropit .dropit-open .dropit-submenu:after {
   content: " ";
   position: absolute;
   border-style: solid;
@@ -48,6 +69,14 @@
   top: -8px;
   right: 10px;
  }
+
+.dropit .dropit-open .dropit-submenu {
+  display: block;
+   background: #FFFFFF;
+   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
+   border-radius: 4px;
+}
+
  .dropit .dropit-open .dropit-submenu li {
   display: block;
   margin-bottom: 20px;
